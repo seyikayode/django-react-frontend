@@ -1,0 +1,21 @@
+.list {
+    text-align: left;
+    max-width: 750px;
+    margin: auto;
+}
+.submit-form {
+    max-width: 300px;
+    margin: auto;
+}
+.edit-form {
+    max-width: 300px;
+    margin: auto;
+}
+#btn-logout {
+    color: rgba(255,255,255,.5);
+    border: none;
+}
+#btn-logout:hover {
+    color: white;
+    background: rgb(173, 51, 51);
+}
