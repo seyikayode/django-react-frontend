@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const axiosInstance = axios.create({
-    baseURL: "http://localhost:8000/api",
+    baseURL: "https://djangoreact-api.herokuapp.com/api",
     timeout: 5000,
     headers: {
         "Authorization": "JWT " + localStorage.getItem("access_token"),
