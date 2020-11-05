@@ -11,7 +11,7 @@ const App =()=> {
         return(
             <div>
                 <nav className="navbar navbar-expand navbar-dark bg-dark">
-                    <a href="/" className="navbar-brand">Home</a>
+                    <Link to={`/`} className="navbar-brand">Home</Link>
                             <div className="navbar-nav mr-auto">
                             <li className="nav-item">
                         <Link to={`/tutorials`} className="nav-link">Tutorials</Link>
