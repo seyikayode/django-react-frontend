@@ -58,11 +58,11 @@ class Tutorial extends Component {
             this.setState({
                 currentTutorial: response.data
             })
-            console.log(response.data)
+            // console.log(response.data)
         })
-        .catch(e => {
-            console.log(e)
-        })
+        // .catch(e => {
+            // console.log(e)
+        // })
     };
 
     updatePublished(status){
@@ -83,35 +83,35 @@ class Tutorial extends Component {
                     }
                 }
             })
-            console.log(response.data)
+            // console.log(response.data)
         })
-        .catch(e => {
-            console.log(e)
-        })
+        // .catch(e => {
+        //     console.log(e)
+        // })
     };
 
     updateTutorial(){
         TutorialDataService.update(this.state.currentTutorial.id, this.state.currentTutorial)
         .then(response => {
-            console.log(response.data)
+            // console.log(response.data)
             this.setState({
                 message: "The tutorial was updated successfully!"
             })
         })
-        .catch(e => {
-            console.log(e)
-        })
+        // .catch(e => {
+        //     console.log(e)
+        // })
     };
 
     deleteTutorial(){
         TutorialDataService.delete(this.state.currentTutorial.id)
         .then(response => {
-            console.log(response.data)
+            // console.log(response.data)
             this.props.history.push("/tutorials")
         })
-        .catch(e => {
-            console.log(e)
-        })
+        // .catch(e => {
+        //     console.log(e)
+        // })
     };
 
     render(){

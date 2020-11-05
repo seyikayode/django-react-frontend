@@ -38,11 +38,11 @@ class TutorialList extends Component {
             this.setState({
                 tutorials: response.data
             })
-            console.log(response.data)
+            // console.log(response.data)
         })
-        .catch(e => {
-            console.log(e)
-        })
+        // .catch(e => {
+        //     console.log(e)
+        // })
     };
 
     refreshList(){
@@ -63,12 +63,12 @@ class TutorialList extends Component {
     removeAllTutorials(){
         TutorialDataService.deleteAll()
         .then(response => {
-            console.log(response.data)
+            // console.log(response.data)
             this.refreshList()
         })
-        .catch(e => {
-            console.log(e)
-        })
+        // .catch(e => {
+        //     console.log(e)
+        // })
     };
 
     searchTitle(){
@@ -77,11 +77,11 @@ class TutorialList extends Component {
             this.setState({
                 tutorials: response.data 
             })
-            console.log(response.data)
+            // console.log(response.data)
         })
-        .catch(e => {
-            console.log(e)
-        })
+        // .catch(e => {
+        //     console.log(e)
+        // })
     };
 
     render(){
